@@ -3,7 +3,7 @@ const fs = require("fs");
 
 AWS.config.update({
   region: "us-east-2",
-  endpoint: "http://localhost:8000",
+  // endpoint: "http://localhost:8000",
 });
 
 // DocumentClient() offers a level of abstraction that enables us to use JavaScript objects as arguments and return native JavaScript types
