@@ -6,8 +6,6 @@ const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [thoughts, setThoughts] = useState([]);
 
-  // const loggedIn = Auth.loggedIn();
-
   useEffect(() => {
     const fetchData = async () => {
       try {
