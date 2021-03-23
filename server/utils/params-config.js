@@ -10,6 +10,7 @@ const params = (fileName) => {
     Bucket: "user-images-0fea095c-590e-4979-ad67-c0912b7b11bd", //Bucket with the name of the S3 bucket we created previously
     Key: `${uuidv4()}.${fileType}`, //Key property, which is the name of this file
     Body: fileName.buffer, // Body property,temporary storage container of the image file. Once the buffer has been used, the temporary storage space is removed by multer.
+    ACL: "public-read", // Allow read access to this file
   };
 
   return imageParams;
